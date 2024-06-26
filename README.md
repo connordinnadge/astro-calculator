@@ -1,29 +1,11 @@
-# Create T3 App
+# Astro Photography Exposure Calculator
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Welcome to the Astro Photography Exposure Time Calculator project! This tool helps photographers calculate the optimal exposure time for capturing stunning images of the night sky.
 
-## What's next? How do I make an app with this?
+## Introduction
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+Astro Photography Exposure Time Calculator is a simple yet powerful web-based tool designed to assist astrophotographers in determining the best exposure settings for their night sky photos. Whether you're a beginner or an experienced photographer, this tool can help you achieve the perfect shot.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+You can use the calculator [here.](https://astro-calculator.connordinnadge.com)
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
-
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+This project is licensed under the MIT License.
