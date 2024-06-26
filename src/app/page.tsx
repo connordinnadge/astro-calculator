@@ -2,7 +2,7 @@
 import Calculator from '@/components/Calculator'
 import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
-import bgImage from '../../public/phil-botha-a0TJ3hy-UD8-unsplash.jpg'
+import bgImage from '../../public/images/phil-botha-a0TJ3hy-UD8-unsplash.jpg'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import Link from 'next/link'
 
