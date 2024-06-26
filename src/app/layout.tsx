@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 
 import { GeistSans } from 'geist/font/sans'
 import type { Metadata } from 'next'
+import PlausibleProvider from 'next-plausible'
 
 const title = 'Astro Photography Exposure Calculator | Connor Dinnadge'
 const description =
@@ -70,6 +71,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang='en' className={`${GeistSans.variable}`}>
+            <PlausibleProvider domain='astro-calculator.connordinnadge.com' />
             <body>{children}</body>
         </html>
     )
