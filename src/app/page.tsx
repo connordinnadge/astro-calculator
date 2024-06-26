@@ -12,7 +12,8 @@ export default function HomePage() {
             <section className='relative flex h-[100vh] w-full flex-col items-center justify-center px-3 py-5 text-center'>
                 <Image
                     src={bgImage}
-                    alt='Astro Photography Photo by Albert Antony on Unsplash'
+                    alt='Astro Photography Photo by Phil Botha on Unsplash</a>
+  '
                     layout='fill'
                     objectFit='cover'
                     className='z-0'
