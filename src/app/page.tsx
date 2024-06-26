@@ -1,37 +1,40 @@
-import Link from "next/link";
+'use client'
+import Calculator from '@/components/Calculator'
+import { Separator } from '@/components/ui/separator'
+import Image from 'next/image'
+import bgImage from '../../public/phil-botha-a0TJ3hy-UD8-unsplash.jpg'
+import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import Link from 'next/link'
 
 export default function HomePage() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
-            </div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
-            </div>
-          </Link>
-        </div>
-      </div>
-    </main>
-  );
+    return (
+        <main>
+            <section className='relative flex h-[100vh] w-full flex-col items-center justify-center px-3 py-5 text-center'>
+                <Image
+                    src={bgImage}
+                    alt='Astro Photography Photo by Albert Antony on Unsplash'
+                    layout='fill'
+                    objectFit='cover'
+                    className='z-0'
+                    priority={true}
+                />
+                <Card className='relative z-10 rounded-2xl border-slate-500 bg-black bg-opacity-70 text-white'>
+                    <CardHeader>
+                        <h1 className='text-3xl font-semibold'>Astro Photography Exposure Calculator</h1>
+                        <p>Get precise exposure times for your astro photography needs</p>
+                    </CardHeader>
+                    <CardContent>
+                        <Separator />
+                        <Calculator />
+                    </CardContent>
+                </Card>
+                <p className='absolute bottom-10 w-full text-xs text-slate-600'>
+                    Created by{' '}
+                    <Link href='https://connordinnadge.com' target='_blank' className='underline'>
+                        Connor Dinnadge
+                    </Link>
+                </p>
+            </section>
+        </main>
+    )
 }
