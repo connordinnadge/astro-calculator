@@ -71,6 +71,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang='en' className={`${GeistSans.variable}`}>
+            <head>
+                <script
+                    defer
+                    data-domain='astro-calculator.connordinnadge.com'
+                    data-api='/modules/api/event'
+                    src='/modules/js/script.js'
+                />
+            </head>
             <PlausibleProvider domain='astro-calculator.connordinnadge.com' />
             <body>{children}</body>
         </html>
